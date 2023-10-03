@@ -44,8 +44,7 @@ public class Employee {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		return "Name : " + getName() + " Age : " + getAge() + " Title : " + getTitle() + " Salary : " + getSalary();
 	}
 	
 	
