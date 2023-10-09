@@ -13,6 +13,7 @@ public class DependencyInjectionTest {
 	
 	public ConstructorInjectionBean constructorInjectionBean;
 	
+	@Autowired
 	public DependencyInjectionTest(ConstructorInjectionBean constructorInjectionBean) {
 		this.constructorInjectionBean = constructorInjectionBean;
 	}
