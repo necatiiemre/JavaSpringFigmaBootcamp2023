@@ -10,9 +10,14 @@ public class BeanApplication {
 	public static void main(String[] args) {
 		ApplicationContext context =  SpringApplication.run(BeanApplication.class, args);
 		
-		DependencyInjectionTest dependencyInjectionTest = context.getBean(DependencyInjectionTest.class);
+		/*
+		*DependencyInjectionTest dependencyInjectionTest = context.getBean(DependencyInjectionTest.class);
+		*
+		*dependencyInjectionTest.print();
+		*/
 		
-		dependencyInjectionTest.print();
+		LifeCycle lifeCycle = context.getBean(LifeCycle.class);
+		lifeCycle.print();
 	}
 
 }
