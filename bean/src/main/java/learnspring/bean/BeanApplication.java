@@ -16,8 +16,14 @@ public class BeanApplication {
 		*dependencyInjectionTest.print();
 		*/
 		
-		LifeCycle lifeCycle = context.getBean(LifeCycle.class);
-		lifeCycle.print();
+		/*
+		*LifeCycle lifeCycle = context.getBean(LifeCycle.class);
+		*lifeCycle.print();
+		*
+		*/
+		
+		InjectionTest injectionTest = context.getBean(InjectionTest.class);
+		injectionTest.print();
 	}
 
 }
